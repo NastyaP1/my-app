@@ -1,0 +1,117 @@
+<!-- Home page -->
+<!-- Section searching city -->
+<section  id="searchCity">
+  <div class="containerBG teal darken-3 ">
+    <div class="row">
+      <div class="col-xl-9 mx-auto d-flex justify-content-center">
+        <h1 class="mb-5 header">Какой город ищем?</h1>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <form>
+          <div class="form-row">
+            <div class="col-12 col-md-9 mb-2 mb-md-0">
+              <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Москва" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+            </div>
+            <div class="col-12 col-md-3">
+              <button type="submit" class="btn btn-outline-white" (click)="_newLocation(-1)" routerLink="/popularLandmarksPage">Найти</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section city portfolio-->
+<section id="portfolio">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" (click)="_newLocation(0)" routerLink="/popularLandmarksPage">
+          <img class="img-fluid" src="/assets/img/Berlin.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="project-category text-white-50">
+              Германия
+            </div>
+            <div class="project-name">
+              Берлин
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" (click)="_newLocation(1)" routerLink="/popularLandmarksPage">
+          <img class="img-fluid" src="/assets/img/Budapesht.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="project-category text-white-50">
+              Венгрия
+            </div>
+            <div class="project-name">
+              Будапешт
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" (click)="_newLocation(2)" routerLink="/popularLandmarksPage">
+          <img class="img-fluid" src="/assets/img/London.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="project-category text-white-50">
+              Великобритания
+            </div>
+            <div class="project-name">
+              Лондон
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" (click)="_newLocation(3)" routerLink="/popularLandmarksPage">
+          <img class="img-fluid" src="/assets/img/Saint-P.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="project-category text-white-50">
+              Россия
+            </div>
+            <div class="project-name">
+              Санкт-Петебург
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" (click)="_newLocation(4)" routerLink="/popularLandmarksPage">
+          <img class="img-fluid" src="/assets/img/Moscow.jpg" alt="">
+          <div class="portfolio-box-caption">
+            <div class="project-category text-white-50">
+              Россия
+            </div>
+            <div class="project-name">
+              Москва
+            </div>
+          </div>
+          </a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" (click)="_newLocation(5)" routerLink="/popularLandmarksPage">
+          <img class="img-fluid" src="/assets/img/Paris.jpg" alt="">
+          <div class="portfolio-box-caption p-3">
+            <div class="project-category text-white-50">
+              Франция
+            </div>
+            <div class="project-name">
+              Париж
+            </div>
+          </div>
+          </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to action section -->
+<section class="page-section mdb-color darken-4 text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Присоединяйся к нам уже сейчас!</h2>
+      <a class="btn btn-outline-white btn-xl" routerLink="">Регистрация</a>
+    </div>
+</section>
